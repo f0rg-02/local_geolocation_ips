@@ -3,4 +3,22 @@ A small python script written to take advantage of the maxmind db to get locatio
 
 You can get the db here: https://www.maxmind.com/en/home
 
-and once you create an account or login, just download the db. The db is updated often so you should get into the habit of downloading the db from the site. You then just run the program as: python3 local_geo.py <list_of_ips> and combine this with grep you can narrow down the geo location of ips.
+and once you create an account or login, just download the db. The db is updated often so you should get into the habit of downloading the db from the site.
+
+Usage:
+
+`usage: local_geo.py [-h] [-i INPUT] [-o OUTPUT] [-lf LOGFILE]`
+
+Example:
+
+`python3 local_geo.py -i <list_of_ips_file> -o <output_file> -lf <log_file>`
+
+Help:
+
+```
+options:
+  -h, --help            show this help message and exit
+  -i INPUT, --input INPUT
+  -o OUTPUT, --output OUTPUT
+  -lf LOGFILE, --logfile LOGFILE
+```
